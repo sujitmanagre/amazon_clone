@@ -22,11 +22,16 @@
 
 button{
     margin: 2px 10px;
-    background-color: #ff9f00;
-    border: 1px solid #ff9f00;
+    border: 0px;
     border-radius: 15px;
     padding: 5px 20px;
     cursor: pointer;
+}
+.buy .addToCart{
+    background-color: #ffd507;
+}
+.buy .buyNow{
+    background-color: #ff9900;
 }
 .details p{
     text-align: center;

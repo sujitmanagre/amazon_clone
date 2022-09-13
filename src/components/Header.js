@@ -4,14 +4,17 @@ import {FaAmazon} from 'react-icons/fa';
 import {FaShoppingCart} from 'react-icons/fa';
 import {BiMap} from 'react-icons/bi';
 import {FaSearch} from 'react-icons/fa';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
   return (
     <header className='header'>
+        <Link style={{textDecoration:'none'}} to='/'>
         <div className="header_logo">
             <FaAmazon fontSize='25px'/>&nbsp;
             <span className="header_logoName">amazon<span className="header_logoNamein">.in</span></span>
         </div>
+        </Link>
         <div className="header_address">
                 <span className="header_nav_lineOne">Deliver to Guest</span>
                 <span className="header_nav_lineTwo"><BiMap fontWeight='bold'/>&nbsp;This Address</span>
@@ -29,7 +32,7 @@ const Header = () => {
                 <span className="header_nav_lineOne">Returns</span>
                 <span className="header_nav_lineTwo">& Orders</span>
             </div>
-            <div className="header_nav_itemBasket"><FaShoppingCart fontSize='25px'/>&nbsp;  4 Cart</div>
+            <Link style={{textDecoration:'none'}} to='shoppingcart'><div className="header_nav_itemBasket"><FaShoppingCart fontSize='25px'/>&nbsp;  4 Cart</div></Link>
         </div>
     </header>
   )
