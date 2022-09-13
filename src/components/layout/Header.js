@@ -1,5 +1,5 @@
 import React from 'react'
-import './header.css'
+import '../style/header.css'
 import {FaAmazon} from 'react-icons/fa';
 import {FaShoppingCart} from 'react-icons/fa';
 import {BiMap} from 'react-icons/bi';
@@ -32,7 +32,7 @@ const Header = () => {
                 <span className="header_nav_lineOne">Returns</span>
                 <span className="header_nav_lineTwo">& Orders</span>
             </div>
-            <Link style={{textDecoration:'none'}} to='shoppingcart'><div className="header_nav_itemBasket"><FaShoppingCart fontSize='25px'/>&nbsp;  4 Cart</div></Link>
+            <Link style={{textDecoration:'none'}} to='shoppingcart'><div className="header_nav_itemBasket"><FaShoppingCart fontSize='25px'/>&nbsp;  <span >3</span>&nbsp;Cart</div></Link>
         </div>
     </header>
   )

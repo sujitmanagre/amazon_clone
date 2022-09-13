@@ -1,9 +1,9 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-import ProductList from "./components/ProductList";
-import Footer from "./components/Footer";
-import ShoppingCart from "./components/ShoppingCart";
+import Header from "./components/layout/Header";
+import Banner from "./components/layout/Banner";
+import ProductList from "./components/layout/ProductList";
+import Footer from "./components/layout/Footer";
+import ShoppingCart from "./components/layout/ShoppingCart";
 import React from 'react';
 
 function App() {

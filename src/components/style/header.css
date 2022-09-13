@@ -59,6 +59,9 @@ input{
       align-items: center;
       color: white;
 }
+.header_nav_itemBasket span{
+    color: orange;
+}
 .header_nav_lineOne{
       font-size: 10px;
       font-weight: normal;

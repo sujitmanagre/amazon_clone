@@ -1,5 +1,5 @@
 import React from 'react'
-import './card.css'
+import '../style/card.css'
 import { FaStar } from 'react-icons/fa';
 import { FaStarHalfAlt } from 'react-icons/fa';
 import { FiStar } from 'react-icons/fi';
