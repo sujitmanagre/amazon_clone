@@ -30,7 +30,7 @@ const Card = ({product}) => {
         <p className="productprice">&#8377; {product.price}/-</p>
       </div>
       <div className="buy">
-        <button className="addToCart">Add to card</button>
+        <button className="addToCart">Add to cart</button>
         <button className="buyNow">Buy Now</button>
       </div>
     </div>
