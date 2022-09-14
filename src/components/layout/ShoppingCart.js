@@ -25,6 +25,7 @@ const ShoppingCart = () => {
               <p className="productBrand">Samsung</p>
               <p className="productdesc">Samsung Galaxy Z Flip 4 5G (8GB, 256GB)</p>
               <p className="productrating"><FaStar color='orange' /><FaStar color='orange' /><FaStar color='orange' /><FaStar color='orange' /><FaStarHalfAlt color='orange' /> ^ 10,705</p>
+              <p><button>Remove from Cart</button></p>
             </div>
             <div className="price">
               <p className="productprice">&#8377; 94,999/-</p>
@@ -38,6 +39,7 @@ const ShoppingCart = () => {
               <p className="productBrand">Woodland</p>
               <p className="productdesc">Men's G 40777cma Leather Sneaker</p>
               <p className="productrating"><FaStar color='orange' /><FaStar color='orange' /><FaStar color='orange' /><FaStar color='orange' /><FiStar color='orange' /> ^ 4,773</p>
+              <p><button>Remove from Cart</button></p>
             </div>
             <div className="price">
               <p className="productprice">&#8377; 2,921/-</p>
@@ -51,6 +53,7 @@ const ShoppingCart = () => {
               <p className="productBrand">Ben Martin</p>
               <p className="productdesc">Men's Relaxed Jeans</p>
               <p className="productrating"><FaStar color='orange' /><FaStar color='orange' /><FaStar color='orange' /><FaStar color='orange' /><FaStarHalfAlt color='orange' /> ^ 26,351</p>
+              <p><button>Remove from Cart</button></p>
             </div>
             <div className="price">
               <p className="productprice">&#8377; 619/-</p>

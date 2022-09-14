@@ -44,6 +44,12 @@
     width: 70%;
     position: relative;
 }
+.cartItem .details button{
+    margin-top: 10px;
+    background-color: red;
+    width: 30%;
+    left: 0;
+}
 .cartItem .details p{
     text-align: left;
 }
