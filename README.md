@@ -2,4 +2,4 @@
 
 # Website Screenshots
 ## Home page
-(screenshots/Home.png)
+{screenshots/Home.png}
