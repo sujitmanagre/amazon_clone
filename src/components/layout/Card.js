@@ -3,8 +3,22 @@ import '../style/card.css'
 import { FaStar } from 'react-icons/fa';
 import { FaStarHalfAlt } from 'react-icons/fa';
 import { FiStar } from 'react-icons/fi';
+import { useStateValue } from './StateProvider';
 
-const Card = ({product}) => {
+const Card = (props) => {
+  const { imglink, brandName, desc, rating, count, price } = props;
+  const { myReducer } = useStateValue();
+  const [ , dispatch] = myReducer;
+  const addToCard = (selectedValue) => {
+    let timeStamp =  new Date().getTime();
+    selectedValue = {...selectedValue, id:timeStamp};
+    dispatch({
+      type:'ADD_TO_CART',
+      payload: selectedValue
+    });
+  }
+
+  
   var starRating = (rating) =>{
     if(rating==1) return (<> <FaStar color='orange' /><FiStar color='orange' /><FiStar color='orange' /><FiStar color='orange' /><FiStar color='orange' /> </>)
     if(rating==1.5) return (<> <FaStar color='orange' /><FaStarHalfAlt color='orange' /><FiStar color='orange' /><FiStar color='orange' /><FiStar color='orange' /> </>)
@@ -21,16 +35,16 @@ const Card = ({product}) => {
   return (<>
     <div className="card">
       <div className="image-container">
-        <img src={product.imglink} alt="image" />
+        <img src={imglink} alt="image" />
       </div>
       <div className="details">
-        <p className="productBrand">{product.brandName}</p>
-        <p className="productdesc">{product.desc}</p>
-        <p className="productrating">{starRating(product.rating)} ^{product.count}</p>
-        <p className="productprice">&#8377; {product.price}/-</p>
+        <p className="productBrand">{brandName}</p>
+        <p className="productdesc">{desc}</p>
+        <p className="productrating">{starRating(rating)} ^{count}</p>
+        <p className="productprice">&#8377; {price}/-</p>
       </div>
       <div className="buy">
-        <button className="addToCart">Add to cart</button>
+        <button className="addToCart" onClick={()=>addToCard(props)}>Add to cart</button>
         <button className="buyNow">Buy Now</button>
       </div>
     </div>

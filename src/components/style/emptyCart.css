@@ -1,0 +1,16 @@
+.emptycart{
+    background-color: #EAEDED;
+    padding: 90px 18px 30px;
+}
+
+.inner{
+    background-color: white;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.inner .contshop{
+    margin-top: 10px;
+    width: 20%;
+}

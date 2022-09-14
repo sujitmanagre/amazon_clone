@@ -5,7 +5,7 @@
     flex-direction: row;
 }
 .shoppingBasket{
-    margin: 30px 9px 18px 18px;
+    margin: 90px 9px 18px 18px;
     background-color: white;
     width: 80%;
     padding: 5px;
@@ -13,9 +13,6 @@
 .heading{
     padding: 20px;
     line-height: 4px;
-}
-.heading p{
-    color: #067D62;
 }
 .itemList{
     padding: 20px;
@@ -28,12 +25,16 @@
 } 
 
 .cartItem{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
     padding: 0px;
     border-top: 0.1px solid #0F1111;
   }
+  .cartItem li{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    border-top: 0.1px solid #0F1111;
+  }
+
 .cartItem .image-container{
     height: 150px;
     width: 20%;
@@ -52,14 +53,21 @@
 }
 .cartItem .details p{
     text-align: left;
+    color: black;
+
+}
+.details .productrating{
+    color: #007185;
 }
 .cartItem .price{
+    color: #0F1111;
     padding: 10px 0px;
     width: 10%;
     font-weight: bold;
     position: relative;
 }
 .cartItem .image-container img{
+    color: #0F1111;
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -68,7 +76,7 @@
 }
 
 .checkOut{
-    margin: 30px 18px 18px 9px;
+    margin: 90px 18px 18px 9px;
     background-color: white;
     height: 20%;
     width: 20%;
